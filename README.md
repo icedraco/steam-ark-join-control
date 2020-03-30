@@ -31,7 +31,7 @@ group to enter the ARK server while disallowing everyone else.
 
 
 ## Testing
- * `curl "http://localhost?steam_id=<steam_id_here>"`
+ * `curl "http://localhost:8888?steam_id=<steam_id_here>"`
 
 
 ## Tech Stack
