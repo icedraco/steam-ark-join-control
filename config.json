@@ -1,0 +1,12 @@
+{
+  "group_url": "https://steamcommunity.com/groups/DrakeArkServer",
+  "group_poll_interval_secs": 60,
+  "allowed": {
+    "Vas": "76561198023716890"
+  },
+  "denied": {
+  },
+  "service_port": 8888,
+  "acl_file": "./steam-access.db",
+  "cache_file": "./steam-profile-cache.db"
+}
