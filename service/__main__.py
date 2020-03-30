@@ -301,15 +301,15 @@ def p_acl_updater(
             # remove auto-allow and auto-deny profiles:
             #  auto-allow profiles were added at INIT and updated just now
             #  auto-deny  profiles were removed at INIT
-            blacklisted_urls = {
+            auto_urls = {
                 profile_url
                 for profile_url, profile
                 in profiles.items()
                 if profile.steam_id in auto_ids
             }
 
-            for bl_url in blacklisted_urls:
-                del profiles[bl_url]
+            for profile_url in auto_urls:
+                del profiles[profile_url]
 
             # add/update what's left
             log(f'{len(profiles)} dynamic profiles updated')
